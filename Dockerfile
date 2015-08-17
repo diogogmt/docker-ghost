@@ -3,7 +3,7 @@ FROM diogogmt/node-js-ubuntu:0.12.3
 ENV GHOST_HOME /usr/local/ghost
 ENV GHOST_CONTENT /var/lib/ghost
 
-RUN wget -O /tmp/ghost.tar.gz https://github.com/diogogmt/Ghost/archive/stable.tar.gz && \
+RUN wget -O /tmp/ghost.tar.gz https://github.com/diogogmt/Ghost/archive/custom-stable.tar.gz && \
     mkdir $GHOST_HOME && \
     tar -xvf /tmp/ghost.tar.gz -C $GHOST_HOME --strip-components=1
 
